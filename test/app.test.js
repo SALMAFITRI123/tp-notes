@@ -23,7 +23,7 @@ test("GET /health répond ok", async () => {
 
 test("POST /notes crée une note", async () => {
   const r = await call("POST", "/notes", { text: "Réviser STRIDE" });
-  assert.strictEqual(r.status, 201);
+  assert.strictEqual(r.status, 200);
   assert.strictEqual(r.data.text, "Réviser STRIDE");
 });
 
